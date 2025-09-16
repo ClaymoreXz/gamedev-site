@@ -1,0 +1,35 @@
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+body {
+    font-weight: var(--font-weight);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+:focus-visible,
+a:focus-visible {
+    outline: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
