@@ -2,6 +2,7 @@
 @import url('styles/variables.css');
 @import url('styles/globals.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+@import url("styles/about.css");
 
 .wrapper {
     background: #000000;
@@ -12,6 +13,10 @@
 
 header {
     padding: 50px 0;
+}
+
+header a {
+    color: var(--href-color)
 }
 
 header .logo,
@@ -359,16 +364,21 @@ footer .blocks {
 footer .blocks p {
     width: 300px;
     margin: 15px 0;
+    color: var(--href-color-footer);
 }
 
 footer .blocks h4 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 17px;
 }
 
 footer .blocks ul {
     list-style: none;
     padding-bottom: 40px;
+}
+
+footer ul a {
+    color: var(--href-color-footer);
 }
 
 footer .blocks ul li {
@@ -379,6 +389,17 @@ footer .blocks ul li {
 .img-flex {
     position: relative;
     bottom: -95px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+
+.image-hover1:hover,
+.image-hover2:hover,
+.image-hover3:hover,
+.image-hover4:hover {
+    transform: scale(1.4);
+    transition: all 500ms ease;
 }
 
 .line {
@@ -401,9 +422,9 @@ footer>p {
     font-size: 13px;
 }
 
-.hero-about {
+/* .hero-about {
     position: relative;
-}
+} */
 
 .hero-about .info h1 {
     font-weight: 600;
@@ -429,8 +450,8 @@ footer>p {
 
 .hero-about img {
     position: absolute;
-    right: -30px;
-    top: 0;
+    right: 0px;
+    top: 150px;
     width: 739px;
     height: 656px;
     border-radius: 10px;
